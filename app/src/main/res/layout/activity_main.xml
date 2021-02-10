@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="411dp"
+        android:layout_height="651dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <include layout="@layout/view_display"></include>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:background="@drawable/tools_design"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+        <Button
+            android:id="@+id/pencil"
+            android:layout_width="55dp"
+            android:layout_height="52dp"
+            android:background="@drawable/ic_baseline_brush_24"
+            android:backgroundTint="#ff0000"
+            android:onClick="pencil"
+            app:backgroundTint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.089"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></Button>
+
+        <Button
+            android:id="@+id/color1"
+            android:layout_width="53dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_design"
+            android:backgroundTint="#FF0000"
+            android:onClick="redColor"
+            app:backgroundTint="@color/red"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></Button>
+
+        <Button
+            android:id="@+id/rab"
+            android:layout_width="53dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_baseline_create_24"
+            android:backgroundTint="@color/black"
+            android:onClick="eraser"
+            android:rotation="-180"
+            app:backgroundTint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.293"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></Button>
+
+        <Button
+            android:id="@+id/color2"
+            android:layout_width="53dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_design"
+            android:backgroundTint="#FF0000"
+            android:onClick="blueColor"
+            app:backgroundTint="@android:color/holo_blue_bright"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.717"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.437"></Button>
+
+        <Button
+            android:id="@+id/color3"
+            android:layout_width="53dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_design"
+            android:backgroundTint="#FF0000"
+            android:onClick="greenColor"
+            app:backgroundTint="@android:color/holo_green_dark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.927"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.437"></Button>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
